@@ -9,7 +9,7 @@ import Basket from "../components/Basket";
 
 const MainPage = () => {
 
-    const [user, setuser] = useState(
+    const [user, setUser] = useState(
         {
             name: "Chris",
             basket: [
@@ -18,6 +18,18 @@ const MainPage = () => {
             ]
         }
     )
+    const [items, setItem] = useState(
+
+        [
+            {name: "mushroom",
+            cost: 5},
+            {name: "star",
+            cost: 10},
+            {name: "coins",
+            cost: 15}
+        ]
+
+    )
 
     
     return(
@@ -25,7 +37,7 @@ const MainPage = () => {
         <UserContext.Provider value={{ user }}>
             <Header />
             <h1>MainPage</h1>
-            <ItemList />
+            <ItemList items={items}/>
             <Basket />
         </UserContext.Provider>
         </>

@@ -1,8 +1,20 @@
+const Item = ({item}) => {
 
-const Item = () => {
+    const handleClick = () => {
 
+        console.log(item.name)
+
+    }
+
+
+
+
+    
     return (
-        <h1>Item</h1>
+        <>
+        <button onClick={handleClick}>Addme</button>
+        
+        </>
     )
 }
 
