@@ -34,7 +34,7 @@ const MainPage = () => {
     
     return(
         <>
-        <UserContext.Provider value={{ user }}>
+        <UserContext.Provider value={{ user , setUser }}>
             <Header />
             <h1>MainPage</h1>
             <ItemList items={items}/>
