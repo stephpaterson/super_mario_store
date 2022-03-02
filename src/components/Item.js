@@ -12,8 +12,8 @@ const Item = ({item}) => {
     
     return (
         <>
-        <button onClick={handleClick}>Addme</button>
-        
+        <button onClick={handleClick}>Add me!</button>
+
         </>
     )
 }
